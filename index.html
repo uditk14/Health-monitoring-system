@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to E- Health Care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<style>p {font-size: 140%;}body{background-color: #f3f3f3;}footer {
+      background-color:#1a1a1a;
+      color: white;
+      padding: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">E - Health Care</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+      </ul>	
+      <ul class="nav navbar-nav navbar-right hidden-xs col-xs-2">
+       
+	<li><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">Log In</button>&nbsp&nbsp
+	</li>
+        
+	<li>     <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2">Sign Up</button>
+ 	</li>
+      
+	</ul>
+      </div>
+  </div>
+</nav> 
+ 
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center><span class="glyphicon glyphicon-lock"></span> Log In</center></h4>
+      	</div>
+      
+	<div class="modal-body">
+        
+			<form role="form" action="login1.php" method="POST">
+    			<div class="form-group">
+      
+      			<input type="text" class="form-control" id="email" placeholder="Username" name="uname" >
+  		        </div>
+    			<div class="form-group">
+      
+      			<input type="password" class="form-control" id="pwd" placeholder="Password" name="up">
+    			</div>
+    			<div class="checkbox">
+      			<label><input type="checkbox"> Remember me</label>
+    			</div>
+			<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+			</form>  		
+		        </div>  
+
+      	
+      
+	<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      	</div>
+ 	
+        		      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><center><span class="glyphicon glyphicon-cloud"></span> Sign Up as<center></h4>
+      </div>
+      <div class="modal-body">
+	<form action="1.php"><p text align = "center">
+	<button type="submit" class="btn btn-info "><span class="glyphicon glyphicon-parents"></span> Patient</button>
+	</form>
+        <form action="doctor.php"><p text align = "center">
+        <button type="submit" class="btn btn-info "><span class="glyphicon glyphicon-doctor"></span> Doctor</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>  
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<br><br>
+
+<div class="row">
+<div class="col-xs-12 col-md-12 col-ld-12 col-sm-12">
+<h1>Welcome to E-Health Care System</h1>
+<hr>
+<p>E-Health Care is a modern project that assigns qualified and most appropriate doctors to the patients. It uses a device that is inbuilt with sensors. It senses patient's pulse rate and transmits it to the main database via Bluetooth connectivity. This project has been made availabe in both application and website formats. </p>
+<p>Patients and Doctors need to sign up on either website or on our application. The patient is able to feed data manually and is also able to synchronise with the our device. The doctors are able to check the heart rate report of the patient. After successful undergo system automatically assigns a doctor to the patient.</p>
+<br>
+</div>
+</div>
+<div class="col-md-4 col-ld-4">
+<img src="pic1.jpg" class="img-rounded img-responsive thumbnail" alt="Cinque Terre" width="304" height="236">
+</div>
+<div class="col-md-4 col-ld-4">
+<img src="p.jpg" class="img-circle img-responsive" alt="Cinque Terre" width="304" height="236">
+</div>
+<div class="col-md-4 col-ld-4">
+<img src="p3.jpg" class="img-rounded img-responsive thumbnail" alt="Cinque Terre" width="304" height="236">
+</div>
+</div>
+<footer class="container-fluid text-center">
+<p style=" font-size:100%;">All rights reserved copyright &#169; 2016</p>
+</footer>
+</body>
+</html>
